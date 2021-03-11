@@ -1,0 +1,20 @@
+.body_bg{
+  background-image:url("https://sm.mashable.com/mashable_in/seo/default/8-years-of-the-avengers-how-joss-whedons-risk-became-crucial_5z9w.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#myCanvas{
+  background-color: white;
+  border-style: ridge;
+  border-width: 10;
+}
+#head_info{
+	width: 500px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+h2{
+  border-radius: 10px;
+  width: 300;
+  padding: 5;
+}

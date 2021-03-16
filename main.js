@@ -92,3 +92,39 @@ function my_keydown(e){
     }
 
 }
+function up(){
+    if(y_position>=0){
+        y_position=y_position-block_height;
+        console.log("up arrow is pressed, then x= "+x_position+", y= "+y_position);
+        console.log("Block Image height="+block_height);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+function down(){
+    if(y_position<500){
+        y_position=y_position+block_height;
+        console.log("block image height= "+block_height);
+        console.log("When down arrow key is pressed, then x="+x_position+" , y= "+y_position);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+function left(){
+    if(x_position>=0){
+        x_position=x_position-block_height;
+        console.log("Block image width= "+block_width);
+        console.log("When left arrow key is pressed, then x="+x_position+" , y= "+y_position);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+function right(){
+    if(x_position<850){
+        x_position=x_position+block_height;
+        console.log("Block image width= "+block_width);
+        console.log("When left arrow key is pressed, then x="+x_position+" , y= "+y_position);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
